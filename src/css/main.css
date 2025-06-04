@@ -1,0 +1,135 @@
+
+.contenedorCard{
+    display: flex;
+    justify-content: center;
+   
+}
+
+
+main {
+    background-image: url('../img/starfall.gif'); /* Cambia la ruta al GIF que deseas usar */
+    background-size: cover;        /* Ajusta el tamaño del GIF al tamaño del elemento */
+    background-repeat: no-repeat;  /* Evita que el fondo se repita */
+    background-position: center;   /* Centra el GIF en el fondo */
+  
+}
+
+h2{
+    margin: 10px;
+}
+
+h3{
+    margin: 10px;
+    text-align: center;
+    color: white;
+}
+
+h4{
+    margin: 10px;
+    
+}
+
+  .card {
+   width: 40%;
+   margin: 10px;
+    border-radius: 5px;
+    /*box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*/
+    overflow: hidden;
+    background-color: #00000059;
+
+    text-align: center;
+    display: flex;
+    color: white;
+  }
+
+  .card:hover {
+    transform: scale(1.01);
+    transition: 0.1s ease-in-out;
+      background-color: #00000088;
+  }
+  
+  .contenedorClientes {
+    display: flex;
+    justify-content: center;
+  }
+
+  .cardCliente {
+    width: 20%; /* Reduce the width to make the card smaller */
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #ffffff8c;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Ensure the image is above the text */
+    color: white;
+  }
+
+
+  .cardCliente img {
+    width: 100%; /* Make the image take the full width of the card */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+.cardCliente:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  }
+  .card img {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+
+  .card-content {
+    padding: 16px;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 0 8px;
+    color: #333;
+  }
+  
+  .card-description {
+    color: #ffffff;
+    line-height: 1.5;
+  }
+  
+  .sobreMi{
+    color: #ffffff;
+  }
+
+  .btnProyectos{
+    width: 150px;
+    height: 50px;
+     background-color: #00000059;
+    border-radius: 5px;
+    color: white;
+    
+    
+  }
+
+  .btnProyectos:hover{
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
+    background-color: #0000008c;
+  }
+
+  .contenedorBtnProyectos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    
+  }
+

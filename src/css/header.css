@@ -1,0 +1,48 @@
+.header {
+    background-color: #000000;
+    color: white;
+    
+    padding: 20px;
+    text-align: center;
+    box-shadow: none;
+    border: none;
+  }
+
+.nav-item{
+    margin-left: 30px; /* Aumenta el margen derecho para mover el logo más a la derecha */
+    vertical-align: middle;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+  margin-left: 30px; /* Aumenta el margen derecho para mover el logo más a la derecha */
+  vertical-align: middle; /* Aligns the logo with the text */
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Slightly enlarges the logo on hover */
+    transition: 0.2s ease-in-out; /* Smooth transition for the hover effect */
+}
+
+ /* Aplica solo a los links del nav */
+.nav-links {
+  display: flex;
+  gap: 25px; /* Espacio horizontal entre ítems */
+  align-items: center;
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.nav-link {
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #007bff; /* o el color que uses en tu sitio */
+  transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+  transition: transform 0.2s ease-in-out; /* Transición suave para el zoom */
+}

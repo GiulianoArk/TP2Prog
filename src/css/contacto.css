@@ -1,0 +1,8 @@
+.mainContacto{
+       background-image: url('../img/starfall.gif'); /* Cambia la ruta al GIF que deseas usar */
+    background-size: cover;        /* Ajusta el tamaño del GIF al tamaño del elemento */
+    background-repeat: no-repeat;  /* Evita que el fondo se repita */
+    background-position: center;   /* Centra el GIF en el fondo */
+  
+  
+}
