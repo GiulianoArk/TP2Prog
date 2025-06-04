@@ -2,7 +2,7 @@ import React from 'react'
 import MainContacto from '../components/MainContacto'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-const Contacto = ({persona, redes}) => {
+const Contacto = ({persona, redes, contacto}) => {
   return (
     <div>
         <>
@@ -10,7 +10,7 @@ const Contacto = ({persona, redes}) => {
 
         </>
 
-      <MainContacto />
+      <MainContacto contacto={contacto} />
      
       <>
       <Footer redes={redes} />

@@ -4,8 +4,8 @@ const MainContacto = () => {
   return (
     <div className='mainContacto'>
 
-    <h1>Contacto</h1>
-
+    <h2>Contacto</h2>
+      
     </div>
   )
 }

@@ -4,10 +4,6 @@ import "../css/main.css";
 
 
 import giulianoImg from "../img/giuliano.jpg";
-import JeremiasImg from "../img/Jermias.jpg";
-import PabloImg from "../img/Pablo.jpg"; 
-import messiImg from "../img/Messi.jpg";
-import AlonsoImg from "../img/Fernando-Alonso.jpg";
 
 
 
