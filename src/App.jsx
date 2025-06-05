@@ -4,28 +4,31 @@ import Contacto from './pages/Contacto'
 import Acerca from './pages/Acerca'
 
 import "./App.css"
-
+import useThemeStore  from './js/themeStore'
 
 
 const App = () => {
   
- const redes={
-        instagram: "https://www.instagram.com/giuliano.c.33/",
-        github: "https://github.com/GiulianoArk",
-        facebook: "https://www.facebook.com/share/1AahcJtqFi/?mibextid=qi2Omg",
-        reddit: "https://www.reddit.com/user/its_arkhamknight/"
-    }
+ const { theme, toggleTheme } = useThemeStore();
   
   return (
-    <>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home redes={redes}  />} />
-        <Route path="/contacto" element={<Contacto  redes={redes} />} />
-        <Route path="/acerca" element={<Acerca redes={redes}  />} />
-      </Routes>
-    </BrowserRouter>
-    </>
+    
+     <div className="app">
+      <button onClick={toggleTheme}>
+        Cambiar a {theme === 'light' ? 'oscuro' : 'claro'}
+      </button>
+
+      <BrowserRouter>
+        {/* Solo el main cambia de estilo según el tema */}
+        <main className={theme}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/contacto" element={<Contacto />} />
+            <Route path="/acerca" element={<Acerca />} />
+          </Routes>
+        </main>
+      </BrowserRouter>
+    </div>
   )
 }
 export default App

@@ -6,11 +6,11 @@ const Contacto = ({persona, redes, contacto}) => {
   return (
     <div>
         <>
-      <Header persona={persona} />
+      <Header  />
 
         </>
 
-      <MainContacto contacto={contacto} />
+      <MainContacto />
      
       <>
       <Footer redes={redes} />

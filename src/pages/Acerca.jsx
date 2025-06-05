@@ -5,8 +5,8 @@ import Header from '../components/Header'
 const AcercaDe = ({persona, redes}) => {
   return (
     <div>
-      
-      <Header persona={persona} />
+
+      <Header />
 
       <MainAcerca />
 

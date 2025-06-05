@@ -1,13 +1,14 @@
 import React from "react";
 import logo from "../img/ShadowCompanyLogo.png";
 import { Link } from "react-router-dom";
+import data from "../database/db.json";
 import "../css/header.css";
 
-const Header = ({ persona }) => {
+const Header = ({ }) => {
   return (
     <header className="header">
       <h1>
-        Portfolio de {persona.nombre} {persona.apellido}
+        Portfolio de {data.persona.nombre} {data.persona.apellido}
       </h1>
 
       <nav class="navbar navbar-expand-lg navbar-light bg-light">

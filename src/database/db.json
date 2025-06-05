@@ -4,11 +4,9 @@
         "apellido": "Calcagni",
         "edad": 18,
         "lenguajes": ["HTML","CSS","JavaScript","Java","C#"],
-        "descripcion": "Estudiante de la Universidad Tecologica Nacional, cursando el segundo año de la Tecnicatura Universitaria en Programación."
-    },
-   
-    "contacto": {
+        "descripcion": "Estudiante de la Universidad Tecologica Nacional, cursando el segundo año de la Tecnicatura Universitaria en Programación.",
         "telefono": "+54 9 381 217-3556",
         "email": "calcagnigiuliano770@gmail.com"
     }
+
 }

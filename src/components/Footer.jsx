@@ -8,16 +8,16 @@ const Footer = (props) => {
     
       <footer className="footer">
         <div className="contenedorRedes">
-        <a href={props.redes.instagram} target="blank">
+        <a href="https://www.instagram.com/giuliano.c.33/" target="blank">
           <FaInstagram className="logoRedSocial"/>
         </a>
-        <a href={props.redes.github} target="blank">
+        <a href="https://github.com/GiulianoArk" target="blank">
           <FaGithub className="logoRedSocial"/>
         </a>
-        <a href={props.redes.reddit} target="_blank">
+        <a href="https://www.reddit.com/user/its_arkhamknight/" target="_blank">
           <FaReddit className="logoRedSocial"/>
         </a>
-        <a href={props.redes.facebook} target="_blank">
+        <a href="https://www.facebook.com/share/1AahcJtqFi/?mibextid=qi2Omg" target="_blank">
           <FaFacebook className="logoRedSocial"/>
         </a>
         </div>
