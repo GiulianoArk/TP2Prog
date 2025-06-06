@@ -1,7 +1,17 @@
-.main-acerca {
- background-image: url('../img/starfall.gif'); /* Cambia la ruta al GIF que deseas usar */
-    background-size: cover;        /* Ajusta el tamaño del GIF al tamaño del elemento */
-    background-repeat: no-repeat;  /* Evita que el fondo se repita */
-    background-position: center;   /* Centra el GIF en el fondo */
+ main.light {
+  background-image: url("../img/white.gif");
+  color: black;
   
 }
+
+main.dark {
+   background-image: url("../img/dark.gif");
+  color: white;
+}
+
+main {
+  transition: background-color 0.3s, color 0.3s;
+  min-height: 100vh;
+  padding: 0;
+}
+

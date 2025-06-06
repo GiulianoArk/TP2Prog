@@ -2,10 +2,8 @@
 .contenedorCard{
     display: flex;
     justify-content: center;
-   
+   padding-top: 3%;
 }
-
-
 
 h2{
     margin: 10px;
@@ -14,7 +12,6 @@ h2{
 h3{
     margin: 10px;
     text-align: center;
-    color: white;
 }
 
 h4{
@@ -22,18 +19,7 @@ h4{
     
 }
 
-  .card {
-   width: 40%;
-   margin: 10px;
-    border-radius: 5px;
-    /*box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*/
-    overflow: hidden;
-    background-color: #00000059;
-
-    text-align: center;
-    display: flex;
-    color: white;
-  }
+  
 
   .card:hover {
     transform: scale(1.01);
@@ -41,24 +27,7 @@ h4{
       background-color: #00000088;
   }
   
-  .contenedorClientes {
-    display: flex;
-    justify-content: center;
-  }
-
-  .cardCliente {
-    width: 20%; /* Reduce the width to make the card smaller */
-    margin: 20px;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    background-color: #ffffff8c;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: center;
-    display: flex;
-    flex-direction: column; /* Ensure the image is above the text */
-    color: white;
-  }
+  
 
 
   .cardCliente img {
@@ -90,16 +59,22 @@ h4{
     font-size: 1.5rem;
     font-weight: bold;
     margin: 0 0 8px;
-    color: #333;
+  
   }
   
-  .card-description {
-    color: #ffffff;
+  .card-description.dark {
+    
+    line-height: 1.5;
+  }
+
+
+  .card-description.light {
+   
     line-height: 1.5;
   }
   
   .sobreMi{
-    color: #ffffff;
+    
   }
 
   .btnProyectos{
@@ -126,3 +101,33 @@ h4{
     
   }
 
+.card {
+  padding-top: 2%;
+   width: 40%;
+   margin: 10px;
+    border-radius: 5px;
+    /*box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*/
+    overflow: hidden;
+    background-color: #00000059;
+    
+    text-align: center;
+    display: flex;
+    
+  }
+
+  main.light {
+  background-image: url("../img/white.gif");
+  color: black;
+  
+}
+
+main.dark {
+   background-image: url("../img/dark.gif");
+  color: white;
+}
+
+main {
+  transition: background-color 0.3s, color 0.3s;
+  min-height: 100vh;
+  padding: 0;
+}

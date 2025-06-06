@@ -2,20 +2,27 @@ import React from "react";
 import logo from "../img/ShadowCompanyLogo.png";
 import { Link } from "react-router-dom";
 import data from "../database/db.json";
+import useThemeStore  from './js/themeStore'
 import "../css/header.css";
 
-const Header = ({ }) => {
+const Header = () => {
+  
+  const { theme, toggleTheme } = useTheme();
+  
   return (
     <header className="header">
       <h1>
         Portfolio de {data.persona.nombre} {data.persona.apellido}
       </h1>
 
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
        
-        <Link to="/">
-          <img src={logo} alt="Logo" className="logo" />
-        </Link>
+        <img
+        src={logo}
+        alt="Cambiar tema"
+        onClick={toggleTheme}
+      />
 
 
 

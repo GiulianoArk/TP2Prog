@@ -5,7 +5,12 @@ const MainContacto = () => {
     <div className='mainContacto'>
 
     <h2>Contacto</h2>
-      
+      <form action="">
+        <input type="text" placeholder='Nombre' />
+        <input type="text" placeholder='Correo' />
+        <input type="text" placeholder='Título'/>
+        <input type="text" placeholder='Mensaje'/>
+      </form>
     </div>
   )
 }
