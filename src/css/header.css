@@ -46,3 +46,10 @@
   transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
   transition: transform 0.2s ease-in-out; /* Transición suave para el zoom */
 }
+
+.btnTema {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding-left: 30px;
+}

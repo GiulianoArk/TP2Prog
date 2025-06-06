@@ -1,128 +1,22 @@
-
-.contenedorCard{
-    display: flex;
-    justify-content: center;
-   padding-top: 3%;
+/* Fondo global y texto */
+.app.light {
+  background-color: #ffffff;
+  color: #000000;
 }
 
-h2{
-    margin: 10px;
+.app.dark {
+  background-color: #121212;
+  color: #ffffff;
 }
 
-h3{
-    margin: 10px;
-    text-align: center;
-}
-
-h4{
-    margin: 10px;
-    
-}
-
-  
-
-  .card:hover {
-    transform: scale(1.01);
-    transition: 0.1s ease-in-out;
-      background-color: #00000088;
-  }
-  
-  
-
-
-  .cardCliente img {
-    width: 100%; /* Make the image take the full width of the card */
-    height: auto; /* Maintain aspect ratio */
-  }
-  
-.cardCliente:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
-  }
-  .card img {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 10px;
-    width: 250px;
-    height: 250px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-
-  .card-content {
-    padding: 16px;
-  }
-  
-  .card-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin: 0 0 8px;
-  
-  }
-  
-  .card-description.dark {
-    
-    line-height: 1.5;
-  }
-
-
-  .card-description.light {
-   
-    line-height: 1.5;
-  }
-  
-  .sobreMi{
-    
-  }
-
-  .btnProyectos{
-    width: 150px;
-    height: 50px;
-     background-color: #00000059;
-    border-radius: 5px;
-    color: white;
-    
-    
-  }
-
-  .btnProyectos:hover{
-    transform: scale(1.1);
-    transition: 0.2s ease-in-out;
-    background-color: #0000008c;
-  }
-
-  .contenedorBtnProyectos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    
-  }
-
-.card {
-  padding-top: 2%;
-   width: 40%;
-   margin: 10px;
-    border-radius: 5px;
-    /*box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*/
-    overflow: hidden;
-    background-color: #00000059;
-    
-    text-align: center;
-    display: flex;
-    
-  }
-
-  main.light {
+/* Fondo y texto en main con gifs */
+main.light {
   background-image: url("../img/white.gif");
   color: black;
-  
 }
 
 main.dark {
-   background-image: url("../img/dark.gif");
+  background-image: url("../img/dark.gif");
   color: white;
 }
 
@@ -130,4 +24,84 @@ main {
   transition: background-color 0.3s, color 0.3s;
   min-height: 100vh;
   padding: 0;
+}
+
+/* Card tematizadas */
+main.light .card {
+  background-color: #f2f2f2;
+  color: black;
+}
+
+main.dark .card {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+/* Botones tematizados */
+main.light .btnProyectos {
+  background-color: #e0e0e0;
+  color: black;
+}
+
+main.dark .btnProyectos {
+  background-color: #333;
+  color: white;
+}
+
+/* Transiciones suaves */
+.card, .btnProyectos, main {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Limpieza innecesaria */
+.card-description {
+  line-height: 1.5;
+}
+
+/* --- Card pequeña y bonita --- */
+
+.card {
+  width: 280px;
+  background-color: inherit; /* usa el color del tema */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  backdrop-filter: blur(8px);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagen de portada */
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+/* Contenido interior */
+.card-content {
+  padding: 16px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 10px 0 6px;
+}
+
+.card-description {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: inherit;
 }

@@ -1,12 +1,18 @@
-// themeStore.js
 import { create } from 'zustand';
 
+const getInitialTheme = () => {
+  const storedTheme = localStorage.getItem('theme');
+  return storedTheme === 'dark' ? 'dark' : 'light';
+};
+
 const useThemeStore = create((set) => ({
-  theme: 'light', // 'light' o 'dark'
+  theme: getInitialTheme(),
   toggleTheme: () =>
-    set((state) => ({
-      theme: state.theme === 'light' ? 'dark' : 'light',
-    })),
+    set((state) => {
+      const newTheme = state.theme === 'light' ? 'dark' : 'light';
+      localStorage.setItem('theme', newTheme);
+      return { theme: newTheme };
+    }),
 }));
 
 export default useThemeStore;

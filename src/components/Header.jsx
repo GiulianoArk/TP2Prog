@@ -1,67 +1,53 @@
-import React from "react";
 import logo from "../img/ShadowCompanyLogo.png";
 import { Link } from "react-router-dom";
 import data from "../database/db.json";
-import useThemeStore  from './js/themeStore'
+import useThemeStore from "../js/themeStore";
+
 import "../css/header.css";
 
 const Header = () => {
-  
-  const { theme, toggleTheme } = useTheme();
-  
+  const { toggleTheme } = useThemeStore();
+
   return (
     <header className="header">
       <h1>
         Portfolio de {data.persona.nombre} {data.persona.apellido}
       </h1>
 
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-
-       
-        <img
-        src={logo}
-        alt="Cambiar tema"
-        onClick={toggleTheme}
-      />
-
-
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button onClick={toggleTheme} className="btnTema" aria-label="Cambiar tema">
+          <img className="logo" src={logo} alt="Cambiar tema" />
+        </button>
 
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-toggle="collapse"
-    data-target="#navbarNav"
-    aria-controls="navbarNav"
-    aria-expanded="false"
-    aria-label="Toggle navigation"
-  >
-    <span class="navbar-toggler-icon"></span>
-  </button>
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
 
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav nav-links">
-      <li class="nav-item">
-        <Link to="/" class="nav-link">
-          Home
-        </Link>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Proyectos</a>
-      </li>
-      <li class="nav-item">
-        <Link to="/contacto" class="nav-link">
-          Contacto
-        </Link>
-      </li>
-      <li class="nav-item">
-        <Link to="/acerca" class="nav-link">
-          Acerca de
-        </Link>
-      </li>
-    </ul>
-  </div>
-</nav>
-
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav nav-links">
+            <li className="nav-item">
+              <Link to="/" className="nav-link">Home</Link>
+            </li>
+            <li className="nav-item">
+              <Link  className="nav-link">Proyectos</Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/contacto" className="nav-link">Contacto</Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/acerca" className="nav-link">Acerca de</Link>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
   );
 };
