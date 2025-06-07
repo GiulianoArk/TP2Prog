@@ -1,12 +1,45 @@
+
 {
     "persona": {
         "nombre": "Giuliano",
         "apellido": "Calcagni",
         "edad": 18,
-        "lenguajes": ["HTML","CSS","JavaScript","Java","C#"],
+        
         "descripcion": "Estudiante de la Universidad Tecologica Nacional, cursando el segundo año de la Tecnicatura Universitaria en Programación.",
         "telefono": "+54 9 381 217-3556",
         "email": "calcagnigiuliano770@gmail.com"
-    }
+    },
 
+    "lenguajes": {
+        "HTML": {
+            "nombre": "HTML",
+            "descripcion": "Lenguaje de marcado utilizado para estructurar contenido en la web.",
+            "nivel": "Intermedio",
+            "imagen": "/html.jpeg"
+        },
+        "CSS": {
+            "nombre": "CSS",
+            "descripcion": "Lenguaje de estilo utilizado para diseñar la presentación de documentos HTML.",
+            "nivel": "Intermedio",
+            "imagen": "/css.png"
+        },
+        "JavaScript": {
+            "nombre": "JavaScript",
+            "descripcion": "Lenguaje de programación que permite crear contenido interactivo en la web.",
+            "nivel": "Intermedio",
+            "imagen": "/javascript.webp"
+        },
+        "Java": {
+            "nombre": "Java",
+            "descripcion": "Lenguaje de programación orientado a objetos, ampliamente utilizado en aplicaciones empresariales.",
+            "nivel": "Básico",
+            "imagen": "/java.png"
+        },
+        "CSharp": {
+            "nombre": "C#",
+            "descripcion": "Lenguaje de programación desarrollado por Microsoft, utilizado principalmente en aplicaciones Windows.",
+            "nivel": "Básico",
+            "imagen": "/csharp.png"
+        }
+    }
 }
