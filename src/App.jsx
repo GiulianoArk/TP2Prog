@@ -6,7 +6,8 @@ import useThemeStore from './js/themeStore'; // Ruta ajustada
 import './App.css';
 
 const App = () => {
-  const { theme, toggleTheme } = useThemeStore();
+  
+  const { theme } = useThemeStore();
 
   return (
     <div className={`app ${theme}`}>

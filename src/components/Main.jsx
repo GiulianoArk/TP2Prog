@@ -22,13 +22,7 @@ const Main = () => {
           </div>
         </div>
         <div className="contenedorBtnProyectos">
-          <a
-            href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.youtube.com/watch%3Fv%3DdQw4w9WgXcQ&ved=2ahUKEwjB-vSQ5e6MAxUXF7kGHa2JCPsQ78AJegQICRAB&usg=AOvVaw0aHtehaphMhOCAkCydRLZU"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button className="btnProyectos">MIS PROYECTOS</button>
-          </a>
+          
         </div>
       </>
     </main>

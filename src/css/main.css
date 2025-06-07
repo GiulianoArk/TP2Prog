@@ -9,7 +9,6 @@
   color: #ffffff;
 }
 
-/* Fondo y texto en main con gifs */
 main.light {
   background-image: url("../img/white.gif");
   color: black;
@@ -26,39 +25,20 @@ main {
   padding: 0;
 }
 
-/* Card tematizadas */
 main.light .card {
-  background-color: #f2f2f2;
-  color: black;
+  background-color: black;
+  color: white;
 }
 
 main.dark .card {
-  background-color: #1a1a1a;
-  color: white;
+  background-color: rgba(255, 255, 255, 0.192);
+  color: rgb(94, 94, 94);
 }
 
-/* Botones tematizados */
-main.light .btnProyectos {
-  background-color: #e0e0e0;
-  color: black;
-}
 
-main.dark .btnProyectos {
-  background-color: #333;
-  color: white;
-}
 
-/* Transiciones suaves */
-.card, .btnProyectos, main {
-  transition: all 0.3s ease-in-out;
-}
 
-/* Limpieza innecesaria */
-.card-description {
-  line-height: 1.5;
-}
 
-/* --- Card pequeña y bonita --- */
 
 .card {
   width: 280px;
@@ -89,19 +69,7 @@ main.dark .btnProyectos {
   border-top-right-radius: 12px;
 }
 
-/* Contenido interior */
-.card-content {
-  padding: 16px;
-}
-
-.card-title {
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin: 10px 0 6px;
-}
-
-.card-description {
-  font-size: 0.95rem;
-  line-height: 1.5;
-  color: inherit;
+.contenedorCard{
+  display: flex;
+  justify-content: center;
 }

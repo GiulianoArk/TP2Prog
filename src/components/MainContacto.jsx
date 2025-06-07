@@ -4,7 +4,6 @@ const MainContacto = () => {
   return (
     <div className='mainContacto'>
 
-    <h2>Contacto</h2>
       <div className='contenedorFormulario'>
 
     <form className="form-container">
