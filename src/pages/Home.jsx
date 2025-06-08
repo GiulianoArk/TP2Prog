@@ -5,18 +5,13 @@ import Footer from '../components/Footer'
 
 const Home = () => {
 
-
-
-
 return (
    <>
 
     <Header />
-
     <Main />
     <Footer />
    </>
-    
 
 )
 }

@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import Contacto from './pages/Contacto';
 import Acerca from './pages/Acerca';
+import Proyectos from './pages/Proyectos';
 import useThemeStore from './js/themeStore'; // Ruta ajustada
 import './App.css';
 
@@ -19,6 +20,7 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="/contacto" element={<Contacto />} />
             <Route path="/acerca" element={<Acerca />} />
+            <Route path="/proyectos" element={<Proyectos />} />
           </Routes>
         </main>
       </BrowserRouter>

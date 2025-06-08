@@ -2,18 +2,17 @@ import React from 'react'
 import MainContacto from '../components/MainContacto'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-const Contacto = ({redes}) => {
+const Contacto = () => {
   return (
     <div>
-        <>
-      <Header  />
-
-        </>
+      <>
+        <Header />
+      </>
 
       <MainContacto />
-     
+
       <>
-      <Footer redes={redes} />
+        <Footer />
       </>
     </div>
   )

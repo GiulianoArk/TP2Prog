@@ -1,34 +1,24 @@
 import "../css/acerca.css";
-
 import data from "../database/db.json";
 import utn from "../img/utn.jpg";
 
 const MainAcerca = () => {
   return (
     <div className="main-acerca">
-     
-
-    <div className="contenedorCard">
-
-    <div className="card" style={{ width: "18rem" }}>
-        <img src={utn} className="card-img-top" alt="..." />
-        <div className="card-body">
-          <p className="card-text">{data.persona.descripcion}</p>
+      <div className="contenedorCard">
+        <div className="card" style={{ width: "18rem" }}>
+          <img src={utn} className="card-img-top" alt="..." />
+          <div className="card-body">
+            <p className="card-text">{data.persona.descripcion}</p>
+          </div>
         </div>
       </div>
 
-    </div>
-
-      
-    <div className="contenedorTitulo">
-          <h3>Lenguajes</h3>
-    </div>
-      
+      <div className="contenedorTitulo">
+        <h3>Lenguajes</h3>
+      </div>
 
       <div className="contenedorCard">
-
-    
-
         <div className="card" style={{ width: "18rem" }}>
           <img
             src={data.lenguajes.HTML.imagen}
